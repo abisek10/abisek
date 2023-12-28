@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Nav Bar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .item {
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            height: 96px;
+            border: 0px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding-left: 110px;
+        }
+
+        li {
+            padding: 0px 23px;
+            font-family: 'Segoe UI';
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .img img {
+            padding-right: 296px;
+        }
+
+        .item>ul>li>img {
+            padding-bottom: 10px;
+        }
+
+        .head {
+            font-family: 'Segoe UI';
+            justify-content: center;
+            padding: 90px 190px 50px 190px;
+            font-size: 24px;
+            display: flex;
+        }
+
+        .head h1 {
+            font-weight: normal;
+        }
+
+        .paragraph {
+            font-size: 24px;
+            font-family: 'Segoe UI';
+            padding: 0px 190px 0px 190px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button button {
+            font-size: 16px;
+            font-family: 'Segoe UI';
+            /* background-color: #8ed1fc; */
+            background-color: #0693e3;
+            ;
+            font-weight: bold;
+            margin: 90px;
+            padding: 12px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text {
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .text01 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI';
+            padding: 0px 20px 0px 20px;
+            font-size: small;
+        }
+
+        .text01 p {
+            padding: 10px 10px 0px 10px;
+        }
+
+        .text01 h1 {
+            font-weight: normal;
+        }
+
+        .box {
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 306px 306px 306px;
+            grid-template-rows: 181px 181px 181px;
+            justify-content: center;
+            align-items: center;
+            row-gap: 24px;
+            column-gap: 30px;
+        }
+
+        .boxes {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 157px;
+            width: 286px;
+            flex-direction: column;
+        }
+
+        .boxes button {
+            margin: 46px 6px 12px 6px;
+            padding: 6px;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .boxes button:first-child {
+            background-color: #0693e3;
+        }
+
+        .boxes button:last-child {
+            background-color: #06e37c;
+        }
+
+        .boxes h3 {
+            font-family: 'Segoe UI';
+        }
+        .boxes p{
+            padding-top: 6px;
+            font-family: 'Segoe UI';
+        }
+        .boxes button a{
+            color: white;
+            text-decoration: none;
+        }
+        .boxes > .padding > button{
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <!-- <div class="img"> <img src="" width="43px" -->
+            <!-- height="43px"> </div> -->
+            <!-- <div class="nav"> -->
+            <div class="img"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+                    width="173.72px" height="55.67px"></div>
+            <ul>
+                <li>Product<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>Pricing<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>Resources<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>About us<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li class="up"><img src="C:\Users\Naresh\Desktop\Capture.png" alt=""></li>
+            </ul>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="head">
+        <h1>Download <b>UltraEdit</b> for Windows
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" width="122px"
+                height="32px">
+        </h1>
+    </div>
+    <div class="paragraph">
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.</p>
+    </div>
+    <div class="button">
+        <button>DOWNLOAD MAC OR LINUX VERSION</button>
+    </div>
+    <div class="text">
+        <div class="img01"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt=""
+                width="60px" height="auto"></div>
+        <div class="text01">
+            <h1>
+                Download UltraEdit
+            </h1>
+            <p>v2023.2(released 12/15/2023) | Hotfix</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="boxes">
+            <div>
+                <h3>English</h3>
+            </div>
+            <div class="padding"><button><a href="/">Download 32-bit></a></button>
+                <button><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1ezsv1k*_ga*MjA2ODkwNzcyLjE3MDMxNjE5MTA.*_ga_QNXHVTPWNS*MTcwMzUxNzA1NS4xMS4wLjE3MDM1MTcwNTYuNTkuMC4w">Download 62-bit></a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>Deutsch</h3>
+            </div>
+            <div>
+                <p>Greman</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>Italiano</h3>
+            </div>
+            <div>
+                <p>Italian</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>Español</h3>
+            </div>
+            <div>
+                <p>Spanish</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+        <div>
+                <h3>Français</h3>
+            </div>
+            <div>
+                <p>French</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>Português brasileiro</h3>
+            </div>
+            <div>
+                <p>Brazilian Portuguese</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>日本</h3>
+            </div>
+            <div>
+                <p>Japanese</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>한국어</h3>
+            </div>
+            <div>
+                <p>Korean</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>中国</h3>
+            </div>
+            <div>
+                <p>Chinese</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <h3>中國</h3>
+            </div>
+            <div>
+                <p>Traditional Chinese</p>
+            </div>
+            <div><button><a href="/">Download 32-bit</a></button>
+                <button><a href="/">Download 62-bit</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
